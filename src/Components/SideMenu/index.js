@@ -5,8 +5,10 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
+import AddCardIcon from '@mui/icons-material/AddCard';
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import CategoryIcon from '@mui/icons-material/Category';
 
 function SideMenu() {
   const location = useLocation();
@@ -48,6 +50,16 @@ function SideMenu() {
             label: "Customers",
             key: "/customers",
             icon: <UserOutlined />,
+          },
+          {
+            label: "Sous_Categorie",
+            key: "/Souscategories",
+            icon: <CategoryIcon />,
+          },
+          {
+            label: "Addproduct",
+            key: "/Addproduct",
+            icon: <AddCardIcon />,
           },
         ]}
       ></Menu>
